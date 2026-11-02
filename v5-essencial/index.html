@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivenza Sob Medida | Móveis Planejados em São Paulo</title>
+  <meta name="description" content="Móveis planejados e sob medida na Lapa, São Paulo. Projeto personalizado, produção na fábrica VITTA e instalação. Conheça a Vivenza e solicite seu orçamento.">
+
+  <!-- TODO: confirmar o domínio definitivo antes da publicação (canonical e og:url). -->
+  <link rel="canonical" href="https://vivenzasobmedida.com.br/">
+
+  <meta name="theme-color" content="#F4F0EA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#110D0E" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Vivenza Sob Medida">
+  <meta property="og:title" content="Vivenza Sob Medida | Móveis Planejados em São Paulo">
+  <meta property="og:description" content="Móveis sob medida para viver o extraordinário todos os dias. Projeto personalizado, produção própria e instalação.">
+  <meta property="og:url" content="https://vivenzasobmedida.com.br/">
+  <!-- TODO: criar assets/img/og-vivenza.jpg (1200×630, foto real de projeto Vivenza) e descomentar as linhas abaixo. -->
+  <!-- <meta property="og:image" content="https://vivenzasobmedida.com.br/assets/img/og-vivenza.jpg"> -->
+  <!-- <meta property="og:image:alt" content="Ambiente planejado pela Vivenza Sob Medida"> -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon gerado a partir da logo enviada (PNG). TODO: substituir por SVG oficial quando disponível. -->
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Aplica o tema antes da primeira pintura para evitar flash de cor. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('vivenza-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fraunces (títulos): serifa de contraste baixo, legível em todos os tamanhos. O eixo opsz é fixado no CSS. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Instrument+Sans:wght@400..600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <!--
+    Dados estruturados: somente informações confirmadas pelo cliente (nome, endereço, horário e fundadores).
+    TODO: adicionar "telephone", "email", "url", "image", "geo" e "sameAs" (redes sociais) após confirmação.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Vivenza Sob Medida",
+    "description": "Móveis planejados e sob medida para residências e ambientes corporativos.",
+    "founder": [
+      { "@type": "Person", "name": "Fernanda Fernandes" },
+      { "@type": "Person", "name": "Arthur Fernandes" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Clélia, 2003",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }]
+  }
+  </script>
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--
+    Ilustrações vetoriais usadas SOMENTE como espaço reservado para fotos.
+    Não representam projetos reais da Vivenza. Remova cada uso quando a foto definitiva for inserida.
+  -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="ill-cozinha" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="30" y="40" width="220" height="70"/>
+      <path d="M103 40V110M176 40V110M92 90V100M114 90V100M165 90V100M187 90V100"/>
+      <path d="M270 60H370M270 95H370"/>
+      <rect x="290" y="42" width="14" height="18"/><circle cx="345" cy="85" r="10"/>
+      <path class="thick" d="M20 165H380"/>
+      <rect x="30" y="168" width="340" height="92"/>
+      <path d="M115 168V260M200 168V260M285 168V260M285 198H370M285 228H370M103 180V200M127 180V200M188 180V200M318 183H338M318 213H338M318 243H338"/>
+      <path d="M240 165V145a8 8 0 0 1 16 0"/>
+    </symbol>
+    <symbol id="ill-dormitorio" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="70" y="50" width="260" height="150"/>
+      <path d="M110 50V200M150 50V200M190 50V200M230 50V200M270 50V200M310 50V200"/>
+      <rect x="95" y="165" width="210" height="70"/>
+      <path d="M95 185H305M105 235V260M295 235V260"/>
+      <rect x="115" y="143" width="70" height="24" rx="6"/><rect x="215" y="143" width="70" height="24" rx="6"/>
+      <rect x="20" y="190" width="50" height="50"/><rect x="330" y="190" width="50" height="50"/>
+      <path d="M20 215H70M330 215H380M45 190V162M355 190V162M35 162h20l-4-18h-12zM345 162h20l-4-18h-12z"/>
+    </symbol>
+    <symbol id="ill-living" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="100" y="30" width="200" height="170"/>
+      <rect x="135" y="65" width="130" height="75"/>
+      <rect x="60" y="200" width="280" height="40"/>
+      <path d="M153 200V240M246 200V240M75 240V260M325 240V260M185 220H215"/>
+      <path d="M320 60H380M320 100H380M320 140H380"/>
+      <rect x="330" y="82" width="14" height="18"/><circle cx="360" cy="130" r="10"/>
+      <rect x="28" y="225" width="24" height="35"/>
+      <path d="M40 225V170M40 195q-20-10-22-32M40 182q18-8 20-30"/>
+    </symbol>
+    <symbol id="ill-office" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="60" y="40" width="160" height="90"/>
+      <path d="M113 40V130M166 40V130M60 85H220"/>
+      <rect x="72" y="58" width="10" height="27"/><rect x="86" y="64" width="10" height="21"/><circle cx="192" cy="110" r="10"/>
+      <path class="thick" d="M40 180H360"/>
+      <rect x="280" y="183" width="70" height="77"/>
+      <path d="M280 209H350M280 235H350M305 196H325M305 222H325M50 183V260"/>
+      <rect x="230" y="112" width="100" height="58"/>
+      <path d="M280 170V180M80 180V150l22-16"/>
+    </symbol>
+    <symbol id="ill-closet" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="40" y="20" width="320" height="240"/>
+      <path d="M147 20V260M253 20V260"/>
+      <path d="M55 60H135M65 66V160M80 66V150M95 66V170M110 66V145M125 66V160"/>
+      <path d="M147 70H253M147 130H253M147 180H253M147 220H253M190 200H210M190 240H210"/>
+      <rect x="163" y="100" width="32" height="30"/><rect x="205" y="108" width="32" height="22"/>
+      <path d="M268 60H345M280 66V230M300 66V220M320 66V235M335 66V210"/>
+    </symbol>
+    <symbol id="ill-corporativo" viewBox="0 0 400 300">
+      <path d="M0 260H400"/>
+      <rect x="60" y="30" width="280" height="130"/>
+      <path d="M90 30V160M120 30V160M150 30V160M250 30V160M280 30V160M310 30V160"/>
+      <circle class="solid" cx="200" cy="95" r="24"/>
+      <path class="thick" d="M70 167H330"/>
+      <rect x="80" y="170" width="240" height="90"/>
+      <path d="M80 200H320M80 230H320"/>
+      <rect x="350" y="225" width="26" height="35"/>
+      <path d="M363 225V175M363 198q-18-8-20-28M363 188q16-6 18-26"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <!-- Símbolo "V" recortado da logo enviada (PNG). TODO: substituir pelo SVG oficial e confirmar o logotipo completo (símbolo + nome). -->
+      <a class="brand" href="#inicio" aria-label="Vivenza Sob Medida, voltar ao início">
+        <span class="brand__mark"><img src="assets/logo-vivenza-v-mark.png" alt="" width="36" height="36"></span>
+        <span class="brand__text">
+          <span class="brand__name">Vivenza</span>
+          <span class="brand__tag">Sob Medida</span>
+        </span>
+      </a>
+
+      <p class="open-status site-header__status" data-open-status hidden></p>
+
+      <div class="site-header__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <a class="btn btn--primary btn--sm site-header__cta" href="#orcamento">Solicitar orçamento</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="menu-toggle__label" data-menu-label>Menu</span>
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu em tela cheia (todas as larguras). Foco preso enquanto aberto; Esc fecha. -->
+    <div class="menu" id="site-menu" data-nav-panel>
+      <div class="menu__inner">
+        <nav class="menu__nav" aria-label="Navegação principal">
+          <ol class="menu__list" data-nav-list>
+            <li><a href="#a-vivenza">A Vivenza</a></li>
+            <li><a href="#ambientes">Ambientes</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <!-- Seções ocultas por enquanto. Restaurar junto com as seções:
+            <li><a href="#a-fabrica">A fábrica</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            -->
+            <li><a href="#orcamento">Orçamento</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ol>
+        </nav>
+        <div class="menu__aside">
+          <p class="mono-label">Visite</p>
+          <address>Rua Clélia, 2003<br>Lapa, São Paulo, SP</address>
+          <p>Segunda a sábado, das 9h às 20h</p>
+          <a class="btn btn--primary" href="#orcamento">Solicitar orçamento</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Régua lateral (desktop largo): índice das seções + progresso da leitura. -->
+  <nav class="rail" aria-label="Índice das seções">
+    <div class="rail__track" aria-hidden="true"><span class="rail__fill" data-rail-fill></span></div>
+    <ol class="rail__list" data-nav-list>
+      <li><a href="#a-vivenza"><span class="rail__label">A Vivenza</span></a></li>
+      <li><a href="#ambientes"><span class="rail__label">Ambientes</span></a></li>
+      <li><a href="#como-funciona"><span class="rail__label">Como funciona</span></a></li>
+      <!-- Seções ocultas por enquanto. Restaurar junto com as seções:
+      <li><a href="#a-fabrica"><span class="rail__label">A fábrica</span></a></li>
+      <li><a href="#projetos"><span class="rail__label">Projetos</span></a></li>
+      <li><a href="#avaliacoes"><span class="rail__label">Avaliações</span></a></li>
+      -->
+      <li><a href="#orcamento"><span class="rail__label">Orçamento</span></a></li>
+      <li><a href="#contato"><span class="rail__label">Contato</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="mono-label hero__eyebrow">Móveis planejados e sob medida · São Paulo</p>
+          <h1 id="hero-title" class="hero__title">
+            <span class="hero__line">Móveis sob medida para viver o</span>
+            <span class="hero__line"><em>extraordinário</em></span>
+            <span class="hero__line">todos os dias.</span>
+          </h1>
+          <p class="hero__lead">Projetos personalizados, do primeiro traço ao último detalhe.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="#orcamento">Solicitar orçamento</a>
+            <a class="btn btn--line btn--lg" href="#a-vivenza">Conhecer a Vivenza</a>
+          </div>
+        </div>
+
+        <figure class="hero__drawing">
+          <!--
+            Imagem ilustrativa gerada por IA (não é projeto real). O prompt usado está no README.
+            Se o arquivo faltar, a imagem é removida e fica visível o espaço reservado.
+          -->
+          <div class="hero__photo">
+            <span class="hero__photo-ph" aria-hidden="true">Foto do móvel · a receber</span>
+            <img src="assets/img/hero-photo-1.jpeg" alt="Cozinha planejada em vista frontal, com coluna e armários aéreos em carvalho e gabinetes inferiores em laca bordô, com as cotas indicadas em milímetros." width="2400" height="1792" fetchpriority="high" decoding="async" onerror="this.remove()">
+          </div>
+
+          <figcaption class="stamp">
+            <span class="stamp__cell"><span class="stamp__k">Projeto</span><span class="stamp__v">O seu ambiente</span></span>
+            <span class="stamp__cell"><span class="stamp__k">Escala</span><span class="stamp__v">1:1</span></span>
+            <span class="stamp__cell"><span class="stamp__k">Cotas</span><span class="stamp__v">mm</span></span>
+            <span class="stamp__cell stamp__cell--note"><span class="stamp__v">Imagem ilustrativa</span></span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <a class="scroll-cue" href="#a-vivenza"><span class="scroll-cue__line" aria-hidden="true"></span>Role para conhecer</a>
+    </section>
+
+    <!-- ===================== A VIVENZA ===================== -->
+    <section class="section about" id="a-vivenza" aria-labelledby="about-title">
+      <div class="container">
+        <header class="shead">
+          <p class="shead__index"><span>A Vivenza</span></p>
+          <h2 id="about-title" class="shead__title">Mais do que móveis: <em>confiança</em> em cada etapa.</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__founders">
+            <img class="founders-photo" src="assets/img/founders.png" alt="Fernanda Fernandes e Arthur Fernandes, fundadores da Vivenza Sob Medida." width="1312" height="1199" loading="lazy" decoding="async">
+            <p class="founders-caption"><strong>Arthur Fernandes &amp; Fernanda Fernandes</strong><span>Mãe e filho, fundadores</span></p>
+          </div>
+
+          <div class="about__story">
+            <p class="about__lead">Nascemos para tornar único o lar de cada cliente.</p>
+            <div class="prose">
+              <p>Fundada por Fernanda e Arthur Fernandes, mãe e filho com mais de oito anos no setor moveleiro, a Vivenza traz do design italiano a referência para criar ambientes sofisticados, funcionais e com a sua personalidade.</p>
+            </div>
+
+            <div class="route" aria-hidden="true">
+              <span class="route__point"><span class="route__dot"></span>Itália<small>referência</small></span>
+              <svg class="route__line" viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M4 50C80 -8 220 -8 296 50"/></svg>
+              <span class="route__point"><span class="route__dot route__dot--fill"></span>São Paulo<small>Lapa</small></span>
+            </div>
+
+            <dl class="about__facts">
+              <div><dt>+8</dt><dd>anos no segmento moveleiro</dd></div>
+              <div><dt><em>Ispirazione</em></dt><dd>italiana em cada projeto</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <figure class="manifesto">
+          <blockquote><p>Na Vivenza, cada detalhe é planejado para que você viva o <em>extraordinário</em> todos os dias.</p></blockquote>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== AMBIENTES ===================== -->
+    <section class="section rooms" id="ambientes" aria-labelledby="rooms-title">
+      <div class="container">
+        <header class="shead shead--split">
+          <div>
+            <p class="shead__index"><span>Ambientes</span></p>
+            <h2 id="rooms-title" class="shead__title">Cada ambiente tem uma história. <em>O projeto começa com a sua.</em></h2>
+          </div>
+          <p class="shead__intro">Um ambiente ou a casa inteira, com beleza e função na medida certa.</p>
+        </header>
+
+        <div class="rooms__layout" data-rooms>
+          <!--
+            TODO (Ambientes): substituir as ilustrações por fotos reais (uma por ambiente), ex.:
+            <img src="assets/img/ambiente-cozinha.webp" alt="Cozinha planejada..., projeto Vivenza" width="1200" height="900" loading="lazy" decoding="async">
+          -->
+          <div class="rooms__preview" aria-hidden="true">
+            <div class="rooms__frame">
+              <div class="ph is-active" data-preview="cozinha"><svg class="ph__art"><use href="#ill-cozinha"/></svg></div>
+              <div class="ph" data-preview="dormitorio"><svg class="ph__art"><use href="#ill-dormitorio"/></svg></div>
+              <div class="ph" data-preview="living"><svg class="ph__art"><use href="#ill-living"/></svg></div>
+              <div class="ph" data-preview="home-office"><svg class="ph__art"><use href="#ill-office"/></svg></div>
+              <div class="ph" data-preview="closet"><svg class="ph__art"><use href="#ill-closet"/></svg></div>
+              <div class="ph" data-preview="corporativo"><svg class="ph__art"><use href="#ill-corporativo"/></svg></div>
+              <span class="ph__tag">Imagem ilustrativa</span>
+            </div>
+            <p class="rooms__caption mono-label" data-preview-caption>01 · Cozinhas</p>
+          </div>
+
+          <ol class="rooms__list">
+            <li class="room" data-room="cozinha">
+              <span class="room__num" aria-hidden="true">01</span>
+              <h3 class="room__title">Cozinhas</h3>
+              <p class="room__desc">Organização e aproveitamento de cada centímetro.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="cozinha">Orçar<span class="visually-hidden"> cozinha</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+            <li class="room" data-room="dormitorio">
+              <span class="room__num" aria-hidden="true">02</span>
+              <h3 class="room__title">Dormitórios</h3>
+              <p class="room__desc">Aconchego e funcionalidade para o seu ritmo.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="dormitorio">Orçar<span class="visually-hidden"> dormitório</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+            <li class="room" data-room="living">
+              <span class="room__num" aria-hidden="true">03</span>
+              <h3 class="room__title">Salas e livings</h3>
+              <p class="room__desc">Convivência, circulação e identidade.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="living">Orçar<span class="visually-hidden"> sala e living</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+            <li class="room" data-room="home-office">
+              <span class="room__num" aria-hidden="true">04</span>
+              <h3 class="room__title">Home offices</h3>
+              <p class="room__desc">Conforto e foco para trabalhar ou estudar.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="home-office">Orçar<span class="visually-hidden"> home office</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+            <li class="room" data-room="closet">
+              <span class="room__num" aria-hidden="true">05</span>
+              <h3 class="room__title">Closets</h3>
+              <p class="room__desc">Tudo organizado, à vista e no lugar.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="closet">Orçar<span class="visually-hidden"> closet</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+            <li class="room" data-room="corporativo">
+              <span class="room__num" aria-hidden="true">06</span>
+              <h3 class="room__title">Corporativos</h3>
+              <p class="room__desc">Identidade e conforto para empresas e profissionais.</p>
+              <a class="room__link" href="#orcamento" data-ambiente="corporativo">Orçar<span class="visually-hidden"> ambiente corporativo</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMO FUNCIONA ===================== -->
+    <!--
+      Etapas e textos conforme o material enviado pelo cliente (PDF "SITE VIVENZA").
+      Em desktop com JS e sem "reduzir movimento", a trilha rola na horizontal enquanto a página rola na vertical.
+      Sem JS, em telas menores ou com movimento reduzido, vira uma lista comum.
+      TODO: ativar o link de WhatsApp quando CONFIG.whatsapp existir.
+    -->
+    <section class="section process" id="como-funciona" aria-labelledby="process-title" data-process>
+      <div class="process__sticky" data-process-sticky>
+        <div class="container process__head">
+          <div>
+            <p class="shead__index"><span>Processo simples</span></p>
+            <h2 id="process-title" class="shead__title">Da ideia ao móvel <em>em 5 passos.</em></h2>
+          </div>
+          <p class="shead__intro">Transparente e sem complicação.</p>
+        </div>
+
+        <div class="process__viewport" data-process-viewport>
+          <ol class="process__track" data-process-track>
+            <li class="pstep">
+              <span class="pstep__num" aria-hidden="true">1</span>
+              <div class="pstep__body">
+                <p class="pstep__kicker mono-label">Passo 1 de 5</p>
+                <h3 class="pstep__title">Contato pelo WhatsApp</h3>
+                <p>Conte sobre o seu ambiente e fale direto com a nossa equipe.</p>
+              </div>
+            </li>
+            <li class="pstep">
+              <span class="pstep__num" aria-hidden="true">2</span>
+              <div class="pstep__body">
+                <p class="pstep__kicker mono-label">Passo 2 de 5</p>
+                <h3 class="pstep__title">Visita ao showroom</h3>
+                <p>Veja materiais e acabamentos de perto e aprove o projeto 3D.</p>
+              </div>
+            </li>
+            <li class="pstep">
+              <span class="pstep__num" aria-hidden="true">3</span>
+              <div class="pstep__body">
+                <p class="pstep__kicker mono-label">Passo 3 de 5</p>
+                <h3 class="pstep__title">Medição final</h3>
+                <p>Medimos o local para garantir o encaixe perfeito.</p>
+              </div>
+            </li>
+            <li class="pstep">
+              <span class="pstep__num" aria-hidden="true">4</span>
+              <div class="pstep__body">
+                <p class="pstep__kicker mono-label">Passo 4 de 5</p>
+                <h3 class="pstep__title">Produção</h3>
+                <p>Fabricação própria, com materiais de primeira linha.</p>
+              </div>
+            </li>
+            <li class="pstep">
+              <span class="pstep__num" aria-hidden="true">5</span>
+              <div class="pstep__body">
+                <p class="pstep__kicker mono-label">Passo 5 de 5</p>
+                <h3 class="pstep__title">Entrega e instalação</h3>
+                <p>Entregamos, instalamos e você aproveita.</p>
+              </div>
+            </li>
+            <li class="pstep pstep--end">
+              <p class="pstep__end-title">O próximo projeto pode ser o seu.</p>
+              <a class="btn btn--primary btn--lg" href="#orcamento">Começar meu projeto</a>
+            </li>
+          </ol>
+          <div class="tape" aria-hidden="true"><span class="tape__fill" data-tape-fill></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== A FÁBRICA VITTA (oculta) ===================== -->
+    <!-- Oculta com display: none até o cliente enviar mais fotos/referências. Para restaurar, remova o style e descomente os links no menu, na régua e no rodapé. -->
+    <!--
+      Texto conforme o material do cliente.
+      TODO (confirmar): relação institucional Vivenza × VITTA e autorização de uso de imagens/vídeo da fábrica.
+    -->
+    <section class="section factory" id="a-fabrica" style="display: none" aria-labelledby="factory-title">
+      <div class="container">
+        <header class="shead shead--split">
+          <div>
+            <p class="shead__index"><span>Fábrica VITTA · Colombo, PR</span></p>
+            <h2 id="factory-title" class="shead__title">A precisão começa <em>na produção.</em></h2>
+          </div>
+          <p class="shead__intro">Nossa fábrica VITTA, localizada em Colombo, no Paraná, reúne tecnologia avançada e um moderno sistema de gestão de estoque e produção, operado por software em tempo real.</p>
+        </header>
+
+        <div class="factory__grid">
+          <div class="factory__plan">
+            <dl class="figures">
+              <div class="figure">
+                <dt class="visually-hidden">Parque fabril</dt>
+                <dd>
+                  <span class="figure__value"><span class="figure__pre">+</span><span data-count="28000">28.000</span><span class="figure__unit">m²</span></span>
+                  <span class="figure__label"><span class="swatch swatch--inner" aria-hidden="true"></span>de parque fabril</span>
+                </dd>
+              </div>
+              <div class="figure">
+                <dt class="visually-hidden">Área total</dt>
+                <dd>
+                  <span class="figure__value"><span class="figure__pre">+</span><span data-count="75000">75.000</span><span class="figure__unit">m²</span></span>
+                  <span class="figure__label"><span class="swatch swatch--outer" aria-hidden="true"></span>de área total</span>
+                </dd>
+              </div>
+            </dl>
+            <figure class="plan">
+              <svg class="plan__svg" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+                <defs>
+                  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                    <path d="M0 0V8"/>
+                  </pattern>
+                </defs>
+                <rect class="plan__outer" x="10" y="10" width="280" height="280"/>
+                <rect class="plan__inner-fill" x="10" y="119" width="171" height="171"/>
+                <rect class="plan__inner" x="10" y="119" width="171" height="171"/>
+                <path class="plan__grid" d="M80 10V290M150 10V290M220 10V290M10 80H290M10 150H290M10 220H290"/>
+              </svg>
+              <figcaption>Proporção entre as duas áreas. Representação esquemática, não é a planta da fábrica.</figcaption>
+            </figure>
+          </div>
+
+          <div class="factory__story">
+            <!--
+              TODO (Vídeo): o PDF do cliente cita "fabricavitta.mp4", arquivo ainda não recebido.
+              Quando chegar: assets/video/fabrica-vitta.mp4 (H.264, até ~8 MB) + poster assets/img/fabrica-vitta-poster.webp.
+              Markup sugerido (sem autoplay com som):
+              <video class="factory__video" controls playsinline preload="none" poster="assets/img/fabrica-vitta-poster.webp">
+                <source src="assets/video/fabrica-vitta.mp4" type="video/mp4">
+              </video>
+            -->
+            <div class="video-ph" role="img" aria-label="Espaço reservado para o vídeo da fábrica VITTA, ainda não recebido.">
+              <span class="video-ph__play" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5.5v13l11-6.5Z"/></svg></span>
+              <span class="video-ph__label" aria-hidden="true">Vídeo da fábrica · a receber</span>
+            </div>
+            <div class="prose">
+              <p>Isso permite o acompanhamento preciso de cada projeto, garantindo eficiência e rastreabilidade em todas as etapas.</p>
+              <p>Todo o ciclo produtivo é cuidadosamente inspecionado por nossa equipe de colaboradores, assegurando que cada detalhe seja executado com máxima precisão e qualidade.</p>
+            </div>
+            <ul class="factory__tags">
+              <li>Software em tempo real</li>
+              <li>Gestão de estoque</li>
+              <li>Rastreabilidade</li>
+              <li>Inspeção de todo o ciclo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS (oculta) ===================== -->
+    <!-- Oculta com display: none até o cliente enviar mais fotos/referências. Para restaurar, remova o style e descomente os links no menu, na régua e no rodapé. -->
+    <section class="section projects" id="projetos" style="display: none" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="shead shead--split">
+          <div>
+            <p class="shead__index"><span>Projetos</span></p>
+            <h2 id="projects-title" class="shead__title">Projetos que <em>permanecem.</em></h2>
+          </div>
+          <p class="shead__intro">Cada projeto traduz uma rotina, uma personalidade e uma forma diferente de viver o espaço.</p>
+        </header>
+
+        <!-- Os projetos são gerados a partir do array PROJECTS em script.js. -->
+        <div class="filters" role="group" aria-label="Filtrar projetos por ambiente" data-filters>
+          <button type="button" class="chip" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filter="cozinha" aria-pressed="false">Cozinhas</button>
+          <button type="button" class="chip" data-filter="dormitorio" aria-pressed="false">Dormitórios</button>
+          <button type="button" class="chip" data-filter="living" aria-pressed="false">Salas e livings</button>
+          <button type="button" class="chip" data-filter="home-office" aria-pressed="false">Home offices</button>
+          <button type="button" class="chip" data-filter="closet" aria-pressed="false">Closets</button>
+          <button type="button" class="chip" data-filter="corporativo" aria-pressed="false">Corporativo</button>
+        </div>
+
+        <p class="visually-hidden" aria-live="polite" data-gallery-status></p>
+        <ul class="bento" data-gallery></ul>
+        <noscript><p class="notice">Ative o JavaScript para visualizar a galeria de projetos.</p></noscript>
+
+        <div class="gallery-foot">
+          <p class="notice" data-gallery-notice hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/></svg>
+            <span>Os projetos exibidos são exemplos ilustrativos e serão substituídos pelo portfólio real da Vivenza.</span>
+          </p>
+          <a class="btn btn--primary btn--lg" href="#orcamento">Quero um projeto como este</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visualização ampliada (dialog nativo: foco preso, Esc fecha, foco retorna ao gatilho) -->
+    <dialog class="lightbox" data-lightbox aria-labelledby="lightbox-title">
+      <div class="lightbox__inner">
+        <button type="button" class="icon-btn lightbox__close" data-lightbox-close aria-label="Fechar visualização">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div class="lightbox__media" data-lightbox-media></div>
+        <div class="lightbox__body">
+          <p class="lightbox__cat mono-label" data-lightbox-cat></p>
+          <h2 class="lightbox__title" id="lightbox-title" data-lightbox-title></h2>
+          <p data-lightbox-desc></p>
+          <p class="lightbox__count mono-label" data-lightbox-count></p>
+          <div class="lightbox__actions">
+            <button type="button" class="btn btn--line btn--sm" data-lightbox-prev>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg>Anterior
+            </button>
+            <button type="button" class="btn btn--line btn--sm" data-lightbox-next>
+              Próximo<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <a class="btn btn--primary" href="#orcamento" data-lightbox-cta>Quero um projeto como este</a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ===================== AVALIAÇÕES (oculta) ===================== -->
+    <!-- Oculta com display: none até o cliente enviar mais fotos/referências. Para restaurar, remova o style e descomente os links no menu, na régua e no rodapé. -->
+    <!--
+      TODO (Avaliações): o PDF do cliente traz duas avaliações do Google (Vera Rodrigues e Geovane), mas elas se referem
+      à empresa "SmartHome" e ao atendimento de Arthur naquela loja. Não foram publicadas aqui para não atribuir à Vivenza
+      avaliações de outra marca. Publicar somente avaliações da Vivenza, com autorização, via array TESTIMONIALS (script.js).
+    -->
+    <section class="section reviews" id="avaliacoes" style="display: none" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="shead shead--split">
+          <div>
+            <p class="shead__index"><span>Avaliações</span></p>
+            <h2 id="reviews-title" class="shead__title">A experiência de quem <em>escolheu a Vivenza.</em></h2>
+          </div>
+          <p class="shead__intro">Cada projeto é feito para um cliente. Cada entrega representa uma experiência construída em conjunto.</p>
+        </header>
+
+        <ul class="testimonials" data-testimonials hidden></ul>
+
+        <div class="reasons" data-testimonials-fallback>
+          <h3 class="reasons__title mono-label">Por que nossos clientes escolhem a Vivenza</h3>
+          <ol class="reasons__list">
+            <li><span class="reasons__num" aria-hidden="true">i.</span>Atendimento próximo e consultivo.</li>
+            <li><span class="reasons__num" aria-hidden="true">ii.</span>Projeto pensado para a rotina de cada cliente.</li>
+            <li><span class="reasons__num" aria-hidden="true">iii.</span>Cuidado com materiais, detalhes e acabamentos.</li>
+            <li><span class="reasons__num" aria-hidden="true">iv.</span>Acompanhamento das etapas do projeto.</li>
+            <li><span class="reasons__num" aria-hidden="true">v.</span>Estrutura produtiva para apoiar precisão e qualidade.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ORÇAMENTO ===================== -->
+    <section class="section quote" id="orcamento" aria-labelledby="form-title">
+      <div class="container quote__grid">
+        <div class="quote__intro">
+          <p class="shead__index"><span>Orçamento</span></p>
+          <h2 id="form-title" class="shead__title">Vamos desenhar <em>o seu espaço?</em></h2>
+          <p class="shead__intro">Preencha e continue a conversa pelo WhatsApp.</p>
+        </div>
+
+        <div class="sheet">
+          <div class="sheet__head" aria-hidden="true">
+            <span>Ficha de projeto</span>
+            <span>Data <span data-today>—</span></span>
+          </div>
+
+          <div class="form-alert form-alert--error" role="alert" data-form-error hidden tabindex="-1">
+            <p class="form-alert__title" data-form-error-title>Verifique os campos destacados e tente novamente.</p>
+            <ul data-form-error-list></ul>
+          </div>
+
+          <div class="form-alert form-alert--success" role="status" data-form-success hidden tabindex="-1">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg>
+            <p>Abrimos o WhatsApp com a sua mensagem. Se ele não abriu, <a data-form-whatsapp-link target="_blank" rel="noopener">toque aqui<span class="visually-hidden"> (abre em nova aba)</span></a>.</p>
+          </div>
+
+          <!--
+            O envio não passa por servidor: monta a mensagem e abre o WhatsApp (wa.me) com o texto pronto.
+            TODO: preencher CONFIG.whatsapp em script.js com o número da Vivenza.
+          -->
+          <form class="form" data-quote-form novalidate aria-labelledby="form-title">
+            <fieldset class="field field--choices" id="f-ambiente" role="radiogroup" aria-describedby="f-ambiente-err" aria-required="true">
+              <legend>Qual ambiente? <span class="req" aria-hidden="true">*</span></legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="ambiente" value="cozinha" id="f-amb-cozinha"><span>Cozinha</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="dormitorio"><span>Dormitório</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="living"><span>Sala e living</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="home-office"><span>Home office</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="closet"><span>Closet</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="corporativo"><span>Corporativo</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="varios"><span>Mais de um</span></label>
+                <label class="choice"><input type="radio" name="ambiente" value="outro"><span>Outro</span></label>
+              </div>
+              <p class="field__error" id="f-ambiente-err" data-error-for="ambiente"></p>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-nome">Nome <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="f-nome-err" maxlength="120">
+              <p class="field__error" id="f-nome-err" data-error-for="nome"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-mensagem">Mensagem <span class="optional">(opcional)</span></label>
+              <textarea id="f-mensagem" name="mensagem" rows="3" maxlength="1000" aria-describedby="f-mensagem-hint"></textarea>
+              <p class="field__hint" id="f-mensagem-hint">Medidas, estilo ou referências.</p>
+            </div>
+
+            <button class="btn btn--primary btn--lg btn--block" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="shead">
+          <p class="shead__index"><span>Unidade Lapa</span></p>
+          <h2 id="contact-title" class="visually-hidden">Venha conhecer a Vivenza</h2>
+          <address class="contact__address">Rua Clélia, 2003<span>Lapa · São Paulo · SP</span></address>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="open-status" data-open-status hidden></p>
+
+            <div class="hours">
+              <p class="hours__text">De segunda a sábado, das 9h às 20h.</p>
+              <ol class="week" aria-hidden="true" data-week>
+                <li data-day="1">S</li><li data-day="2">T</li><li data-day="3">Q</li><li data-day="4">Q</li><li data-day="5">S</li><li data-day="6">S</li><li data-day="0" class="is-off">D</li>
+              </ol>
+            </div>
+
+            <p class="contact__intro">Venha ver materiais e acabamentos de perto.</p>
+
+            <dl class="info-list">
+              <!-- TODO: confirmar se os estacionamentos parceiros (informados no site atual) continuam válidos. -->
+              <div class="info-list__item">
+                <dt>Estacionamento</dt>
+                <dd>Parceiros próximos: Stop Seguro (Rua Clélia, 1876) e Estacione Aqui (Rua Monjolo, 254). <span class="pending">(a confirmar)</span></dd>
+              </div>
+              <div class="info-list__item">
+                <dt>Telefone</dt>
+                <dd data-contact="phone"><span class="pending">A confirmar</span></dd>
+              </div>
+              <div class="info-list__item">
+                <dt>WhatsApp</dt>
+                <dd data-contact="whatsapp"><span class="pending">A confirmar</span></dd>
+              </div>
+              <div class="info-list__item">
+                <dt>E-mail</dt>
+                <dd data-contact="email"><span class="pending">A confirmar</span></dd>
+              </div>
+            </dl>
+
+            <div class="btn-row">
+              <a class="btn btn--primary" data-route-link href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Cl%C3%A9lia%2C%202003%2C%20Lapa%2C%20S%C3%A3o%20Paulo%2C%20SP" target="_blank" rel="noopener">Abrir rota<span class="visually-hidden"> (abre o Google Maps em nova aba)</span></a>
+              <a class="btn btn--line" data-talk-link aria-disabled="true">Falar com a equipe</a>
+            </div>
+            <p class="field__hint" data-talk-hint>WhatsApp e telefone em confirmação.</p>
+          </div>
+
+          <div class="contact__map">
+            <!--
+              TODO (Mapa): substituir por mapa oficial. Opções:
+              1) imagem estática assets/img/mapa-vivenza.webp com link para o perfil do Google;
+              2) <iframe> do Google Maps com loading="lazy" e title="Mapa da unidade Vivenza na Rua Clélia, 2003".
+              Configurar a URL do perfil da empresa em CONFIG.mapsUrl (script.js).
+            -->
+            <!-- Traçado esquemático das ruas próximas, desenhado a partir do Google Maps (sem escala). -->
+            <div class="map-ph" role="img" aria-label="Mapa ilustrativo da unidade Vivenza na Rua Clélia, 2003, Lapa, São Paulo, na esquina com a Rua Trajano, perto do Hospital Municipal Sorocabana.">
+              <svg viewBox="0 0 600 430" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice">
+                <g class="map-ph__streets">
+                  <path d="M-10 40L610 56M60 127L610 142M-10 264L256 300L610 316M248 400L610 404M-10 104L76 98"/>
+                  <path d="M188 -10L182 296L156 440M376 -10L370 132L364 280L358 440M476 -10L468 440M584 -10L572 440M120 -10L-10 240M80 440L180 300"/>
+                </g>
+                <path class="map-ph__main" d="M278 -10L260 200L252 300L238 440"/>
+                <path class="map-ph__main" d="M-10 198L610 228"/>
+
+                <g class="map-ph__label">
+                  <text x="396" y="43" transform="rotate(1.5 396 43)">Rua Roma</text>
+                  <text x="396" y="128" transform="rotate(1.6 396 128)">R. Faustolo</text>
+                  <text x="396" y="297" transform="rotate(2.6 396 297)">R. Coriolano</text>
+                  <text x="352" y="370" text-anchor="middle" transform="rotate(-90 352 370)">R. Catão</text>
+                  <text x="462" y="370" text-anchor="middle" transform="rotate(-90 462 370)">R. Cipião</text>
+                </g>
+                <text class="map-ph__label map-ph__label--main" x="396" y="207" transform="rotate(2.8 396 207)">R. Clélia</text>
+                <text class="map-ph__label map-ph__label--main" x="234" y="344" text-anchor="middle" transform="rotate(-84.3 234 344)">R. Trajano</text>
+
+                <g class="map-ph__poi">
+                  <rect x="309" y="151" width="10" height="10" rx="2"/>
+                  <text x="314" y="174" text-anchor="middle">Hospital</text>
+                  <text x="314" y="185" text-anchor="middle">Sorocabana</text>
+                </g>
+
+                <circle class="map-ph__pulse" cx="262" cy="212" r="14"/>
+                <circle class="map-ph__dot" cx="262" cy="212" r="6"/>
+                <text class="map-ph__pin-label" x="274" y="240">Vivenza</text>
+              </svg>
+              <span class="ph__tag" aria-hidden="true">Mapa ilustrativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <p class="site-footer__claim">Viva o <em>extraordinário</em><br>todos os dias.</p>
+        <a class="btn btn--primary btn--lg" href="#orcamento">Solicitar orçamento</a>
+      </div>
+
+      <div class="site-footer__grid">
+        <nav class="site-footer__col" aria-label="Navegação do rodapé">
+          <h2 class="mono-label">Navegação</h2>
+          <ul>
+            <li><a href="#a-vivenza">A Vivenza</a></li>
+            <li><a href="#ambientes">Ambientes</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <!-- Seções ocultas por enquanto:
+            <li><a href="#a-fabrica">A fábrica</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            -->
+            <li><a href="#orcamento">Orçamento</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__col">
+          <h2 class="mono-label">Visite</h2>
+          <address>Rua Clélia, 2003, Lapa<br>São Paulo, SP</address>
+          <p>Segunda a sábado, das 9h às 20h</p>
+        </div>
+        <div class="site-footer__col">
+          <h2 class="mono-label">Fale conosco</h2>
+          <!-- TODO: preencher CONFIG.phone, CONFIG.whatsapp e CONFIG.email em script.js. -->
+          <ul>
+            <li>Telefone: <span data-contact="phone"><span class="pending">a confirmar</span></span></li>
+            <li>WhatsApp: <span data-contact="whatsapp"><span class="pending">a confirmar</span></span></li>
+            <li>E-mail: <span data-contact="email"><span class="pending">a confirmar</span></span></li>
+          </ul>
+          <!-- TODO: adicionar links oficiais de redes sociais (Instagram, Pinterest etc.) após confirmação. -->
+        </div>
+      </div>
+    </div>
+
+    <p class="wordmark" aria-hidden="true">Vivenza</p>
+
+    <div class="container site-footer__bottom">
+      <!-- TODO: confirmar razão social e CNPJ para exibição no rodapé. -->
+      <p>© <span data-year>2026</span> Vivenza Sob Medida. Todos os direitos reservados.</p>
+      <ul class="site-footer__legal">
+        <li><a data-config-link="privacyUrl" aria-disabled="true">Política de privacidade</a><span class="pending" data-pending-for="privacyUrl"> (em elaboração)</span></li>
+        <li><a data-config-link="accessibilityUrl" aria-disabled="true">Acessibilidade</a><span class="pending" data-pending-for="accessibilityUrl"> (em elaboração)</span></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#inicio" data-to-top aria-label="Voltar ao topo">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 15l6-6 6 6"/></svg>
+  </a>
+</body>
+</html>
